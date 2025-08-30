@@ -215,7 +215,7 @@ export default function AdminUsersPage() {
                     </Badge>
                   </TableCell>
                   <TableCell>{format(new Date(user.registrationDate), "PPP")}</TableCell>
-                   <TableCell className="hidden md:table-cell">{new Date(user.lastLogin).toLocaleString()}</TableCell>
+                   <TableCell className="hidden md:table-cell">{format(new Date(user.lastLogin), "PPpp")}</TableCell>
                   <TableCell>
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
@@ -288,7 +288,7 @@ export default function AdminUsersPage() {
                             <div><Label>User ID</Label><p className="text-sm text-muted-foreground">{selectedUser.id}</p></div>
                         </div>
                          <div><Label>Registration Date</Label><p className="text-sm">{format(new Date(selectedUser.registrationDate), "PPP")}</p></div>
-                         <div><Label>Last Login</Label><p className="text-sm">{new Date(selectedUser.lastLogin).toLocaleString()}</p></div>
+                         <div><Label>Last Login</Label><p className="text-sm">{format(new Date(selectedUser.lastLogin), "PPpp")}</p></div>
                     </div>
                     <DialogFooter>
                         <Button onClick={() => setIsViewUserDialogOpen(false)}>Close</Button>
