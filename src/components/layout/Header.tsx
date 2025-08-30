@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, ShoppingCart, X } from "lucide-react";
+import { Menu, ShoppingCart, User, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -86,6 +86,12 @@ export function Header() {
               <Link href="/cart">
                 <ShoppingCart className="h-5 w-5" />
                 <span className="sr-only">Shopping Cart</span>
+              </Link>
+            </Button>
+            <Button asChild variant="ghost" size="icon">
+              <Link href="#">
+                <User className="h-5 w-5" />
+                <span className="sr-only">User Profile</span>
               </Link>
             </Button>
           </nav>
