@@ -9,6 +9,7 @@ import {
   UserX,
   Trash2,
   FileDown,
+  Edit,
 } from "lucide-react";
 import { users as initialUsers } from "@/lib/data";
 import type { User } from "@/lib/types";
@@ -26,6 +27,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
@@ -66,6 +68,7 @@ export default function AdminUsersPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [isAddUserDialogOpen, setIsAddUserDialogOpen] = useState(false);
   const [isViewUserDialogOpen, setIsViewUserDialogOpen] = useState(false);
+  const [isEditUserDialogOpen, setIsEditUserDialogOpen] = useState(false);
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
 
@@ -78,6 +81,11 @@ export default function AdminUsersPage() {
   const handleViewUser = (user: User) => {
     setSelectedUser(user);
     setIsViewUserDialogOpen(true);
+  };
+  
+  const handleEditUser = (user: User) => {
+    setSelectedUser(user);
+    setIsEditUserDialogOpen(true);
   };
 
   const handleDeleteUser = (user: User) => {
@@ -117,6 +125,22 @@ export default function AdminUsersPage() {
     };
     setUsers([...users, newUser]);
     setIsAddUserDialogOpen(false);
+  };
+  
+  const handleUpdateUser = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!selectedUser) return;
+
+    const form = event.currentTarget;
+    const updatedUser: User = {
+      ...selectedUser,
+      name: (form.elements.namedItem('name') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      status: (form.elements.namedItem('status') as HTMLInputElement).checked ? 'Active' : 'Blocked',
+    };
+    setUsers(users.map(u => u.id === updatedUser.id ? updatedUser : u));
+    setIsEditUserDialogOpen(false);
+    setSelectedUser(null);
   };
 
 
@@ -209,6 +233,10 @@ export default function AdminUsersPage() {
                         <DropdownMenuItem onSelect={() => handleViewUser(user)}>
                           View Details
                         </DropdownMenuItem>
+                        <DropdownMenuItem onSelect={() => handleEditUser(user)}>
+                          <Edit className="mr-2 h-4 w-4" />
+                          <span>Edit</span>
+                        </DropdownMenuItem>
                         <DropdownMenuItem onSelect={() => handleToggleStatus(user)}>
                           {user.status === "Active" ? (
                             <UserX className="mr-2 h-4 w-4" />
@@ -217,6 +245,7 @@ export default function AdminUsersPage() {
                           )}
                           <span>{user.status === "Active" ? "Block" : "Unblock"}</span>
                         </DropdownMenuItem>
+                        <DropdownMenuSeparator />
                         <DropdownMenuItem
                           onSelect={() => handleDeleteUser(user)}
                           className="text-destructive"
@@ -266,6 +295,49 @@ export default function AdminUsersPage() {
                     </DialogFooter>
                 </>
             )}
+        </DialogContent>
+      </Dialog>
+
+      {/* Edit User Dialog */}
+      <Dialog open={isEditUserDialogOpen} onOpenChange={setIsEditUserDialogOpen}>
+        <DialogContent>
+          <form onSubmit={handleUpdateUser}>
+            <DialogHeader>
+              <DialogTitle>Edit User</DialogTitle>
+              <DialogDescription>
+                Update the details for {selectedUser?.name}.
+              </DialogDescription>
+            </DialogHeader>
+            {selectedUser && (
+              <div className="grid gap-4 py-4">
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="name-edit" className="text-right">
+                    Name
+                  </Label>
+                  <Input id="name-edit" name="name" defaultValue={selectedUser.name} className="col-span-3" required />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="email-edit" className="text-right">
+                    Email
+                  </Label>
+                  <Input id="email-edit" name="email" type="email" defaultValue={selectedUser.email} className="col-span-3" required />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="status-edit" className="text-right">
+                      Status
+                  </Label>
+                  <div className="col-span-3 flex items-center gap-2">
+                      <Switch id="status-edit" name="status" defaultChecked={selectedUser.status === 'Active'} />
+                      <Label htmlFor="status-edit">Active</Label>
+                  </div>
+                </div>
+              </div>
+            )}
+            <DialogFooter>
+              <Button type="button" variant="outline" onClick={() => setIsEditUserDialogOpen(false)}>Cancel</Button>
+              <Button type="submit">Save Changes</Button>
+            </DialogFooter>
+          </form>
         </DialogContent>
       </Dialog>
       
