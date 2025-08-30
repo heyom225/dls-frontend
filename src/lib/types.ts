@@ -20,3 +20,13 @@ export type Post = {
   date: string;
   dataAiHint: string;
 };
+
+export type User = {
+  id: string;
+  name: string;
+  email: string;
+  avatar: string;
+  status: 'Active' | 'Blocked';
+  registrationDate: string;
+  lastLogin: string;
+};

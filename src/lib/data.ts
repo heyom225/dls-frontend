@@ -1,4 +1,4 @@
-import type { Product, Post } from './types';
+import type { Product, Post, User } from './types';
 
 export const products: Product[] = [
   {
@@ -131,5 +131,63 @@ export const posts: Post[] = [
     dataAiHint: 'smart home'
   }
 ];
+
+export const users: User[] = [
+  {
+    id: 'usr-001',
+    name: 'Alice Johnson',
+    email: 'alice.j@example.com',
+    avatar: 'https://i.pravatar.cc/40?u=usr-001',
+    status: 'Active',
+    registrationDate: '2024-01-15',
+    lastLogin: '2024-07-20T10:30:00Z'
+  },
+  {
+    id: 'usr-002',
+    name: 'Bob Williams',
+    email: 'bob.w@example.com',
+    avatar: 'https://i.pravatar.cc/40?u=usr-002',
+    status: 'Active',
+    registrationDate: '2024-02-20',
+    lastLogin: '2024-07-19T15:00:00Z'
+  },
+  {
+    id: 'usr-003',
+    name: 'Charlie Brown',
+    email: 'charlie.b@example.com',
+    avatar: 'https://i.pravatar.cc/40?u=usr-003',
+    status: 'Blocked',
+    registrationDate: '2024-03-10',
+    lastLogin: '2024-06-30T12:00:00Z'
+  },
+  {
+    id: 'usr-004',
+    name: 'Diana Prince',
+    email: 'diana.p@example.com',
+    avatar: 'https://i.pravatar.cc/40?u=usr-004',
+    status: 'Active',
+    registrationDate: '2024-04-05',
+    lastLogin: '2024-07-21T09:00:00Z'
+  },
+  {
+    id: 'usr-005',
+    name: 'Ethan Hunt',
+    email: 'ethan.h@example.com',
+    avatar: 'https://i.pravatar.cc/40?u=usr-005',
+    status: 'Active',
+    registrationDate: '2024-05-25',
+    lastLogin: '2024-07-18T18:45:00Z'
+  },
+   {
+    id: 'usr-006',
+    name: 'Fiona Glenanne',
+    email: 'fiona.g@example.com',
+    avatar: 'https://i.pravatar.cc/40?u=usr-006',
+    status: 'Blocked',
+    registrationDate: '2024-06-01',
+    lastLogin: '2024-07-01T11:20:00Z'
+  }
+];
+
 
 export const productCategories = Array.from(new Set(products.map(p => p.category)));
