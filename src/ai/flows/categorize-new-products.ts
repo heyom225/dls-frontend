@@ -40,7 +40,7 @@ const prompt = ai.definePrompt({
   name: 'suggestCategoryPrompt',
   input: {schema: SuggestCategoryInputSchema},
   output: {schema: SuggestCategoryOutputSchema},
-  prompt: `You are an AI product categorization expert for an e-commerce website called Techtonic Edge, which sells IoT gadgets, home automation devices, macropads, mini electric screwdrivers, and other smart tools.
+  prompt: `You are an AI product categorization expert for an e-commerce website called Domestic Labs, which sells IoT gadgets, home automation devices, macropads, mini electric screwdrivers, and other smart tools.
 
   Given the following product name and description, suggest the most appropriate category for the product. You must pick one of the following categories:
   - IoT Gadgets

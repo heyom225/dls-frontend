@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Techtonic Edge',
+  title: 'Domestic Labs',
   description: 'The future of tech gadgets is here.',
 };
 

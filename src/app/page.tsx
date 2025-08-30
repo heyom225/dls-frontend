@@ -27,7 +27,7 @@ export default function Home() {
             The Future Is In Your Hands
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/80">
-            Discover the next generation of smart tools and IoT devices. Techtonic Edge brings you the bleeding edge of innovation.
+            Discover the next generation of smart tools and IoT devices. Domestic Labs brings you the bleeding edge of innovation.
           </p>
           <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90 text-lg font-bold">
             <Link href="/products">

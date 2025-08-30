@@ -50,7 +50,7 @@ export default function CartPage() {
                         </TableCell>
                         <TableCell>
                           <Link href={`/products/${item.id}`} className="font-medium hover:text-primary">{item.name}</Link>
-                          <p className="text-sm text-muted-foreground">${item.price.toFixed(2)}</p>
+                          <p className="text-sm text-muted-foreground">₹{item.price.toFixed(2)}</p>
                         </TableCell>
                         <TableCell>
                           <div className="flex items-center justify-center gap-2">
@@ -59,7 +59,7 @@ export default function CartPage() {
                             <Button variant="ghost" size="icon" className="h-7 w-7"><PlusCircle className="h-4 w-4" /></Button>
                           </div>
                         </TableCell>
-                        <TableCell className="text-right font-medium">${(item.price * item.quantity).toFixed(2)}</TableCell>
+                        <TableCell className="text-right font-medium">₹{(item.price * item.quantity).toFixed(2)}</TableCell>
                         <TableCell className="text-right">
                           <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-destructive h-7 w-7">
                             <Trash2 className="h-4 w-4" />
@@ -80,15 +80,15 @@ export default function CartPage() {
               <CardContent className="grid gap-4">
                 <div className="flex justify-between">
                   <span>Subtotal</span>
-                  <span className="font-medium">${subtotal.toFixed(2)}</span>
+                  <span className="font-medium">₹{subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Shipping</span>
-                  <span className="font-medium">{shipping > 0 ? `$${shipping.toFixed(2)}` : 'Free'}</span>
+                  <span className="font-medium">{shipping > 0 ? `₹${shipping.toFixed(2)}` : 'Free'}</span>
                 </div>
                  <div className="flex justify-between border-t pt-4">
                   <span className="text-lg font-bold">Total</span>
-                  <span className="text-lg font-bold">${total.toFixed(2)}</span>
+                  <span className="text-lg font-bold">₹{total.toFixed(2)}</span>
                 </div>
               </CardContent>
               <CardFooter className="flex-col gap-4">

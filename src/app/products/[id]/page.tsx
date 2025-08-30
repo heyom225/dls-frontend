@@ -53,7 +53,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         <div>
           <Badge variant="secondary" className="mb-2">{product.category}</Badge>
           <h1 className="text-4xl md:text-5xl font-headline font-bold mb-4">{product.name}</h1>
-          <p className="text-3xl font-semibold text-primary mb-6">${product.price.toFixed(2)}</p>
+          <p className="text-3xl font-semibold text-primary mb-6">₹{product.price.toFixed(2)}</p>
           
           <p className="text-lg text-foreground/80 mb-6">{product.longDescription}</p>
 

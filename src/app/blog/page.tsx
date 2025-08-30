@@ -10,7 +10,7 @@ export default function BlogPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-headline font-bold">Techtonic Insights</h1>
+        <h1 className="text-4xl md:text-5xl font-headline font-bold">Domestic Labs Insights</h1>
         <p className="mt-2 text-lg text-foreground/80">News, tutorials, and tips from the edge of technology.</p>
       </div>
 

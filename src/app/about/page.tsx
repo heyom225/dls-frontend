@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <section className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-headline font-bold">About Techtonic Edge</h1>
+        <h1 className="text-4xl md:text-5xl font-headline font-bold">About Domestic Labs</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-foreground/80">
           We are a team of tech enthusiasts, designers, and engineers dedicated to bringing you the most innovative and useful gadgets on the market. We believe technology should be both powerful and accessible.
         </p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-3xl font-headline font-bold mb-4">From Garage Project to Global Vision</h2>
           <p className="text-foreground/80 mb-4">
-            Techtonic Edge started as a passion project in a small workshop, born from a desire for better, smarter tools. We were tired of the compromise between functionality and design. Why couldn't our tools be as smart and as beautiful as the things we were creating with them?
+            Domestic Labs started as a passion project in a small workshop, born from a desire for better, smarter tools. We were tired of the compromise between functionality and design. Why couldn't our tools be as smart and as beautiful as the things we were creating with them?
           </p>
           <p className="text-foreground/80">
             Today, that simple idea has grown into a curated marketplace for the best IoT gadgets and smart tools from around the world. We rigorously test every product, ensuring it meets our high standards for performance, durability, and design. Welcome to the edge of technology.

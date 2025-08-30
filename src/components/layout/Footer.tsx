@@ -26,7 +26,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border/40 text-center text-sm text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Techtonic Edge. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Domestic Labs. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
