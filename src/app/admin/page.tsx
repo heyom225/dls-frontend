@@ -8,10 +8,6 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import {
-  BarChart,
-  LineChart,
-  PieChart,
-  AreaChart,
   Users,
   DollarSign,
   ShoppingCart,
@@ -19,15 +15,17 @@ import {
 } from "lucide-react";
 import {
   ResponsiveContainer,
+  BarChart,
   Bar,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
   Legend,
-  Line,
+  PieChart,
   Pie,
   Cell,
+  AreaChart,
   Area,
 } from "recharts";
 import { Progress } from "@/components/ui/progress";
