@@ -89,7 +89,7 @@ export function Header() {
               </Link>
             </Button>
             <Button asChild variant="ghost" size="icon">
-              <Link href="#">
+              <Link href="/login">
                 <User className="h-5 w-5" />
                 <span className="sr-only">User Profile</span>
               </Link>
