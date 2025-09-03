@@ -33,9 +33,9 @@ export const products: Product[] = [
     "price": 1299.00,
     "category": "Mini Electric Screwdrivers",
     "images": [
-      "https://picsum.photos/600/600?random=14",
-      "https://picsum.photos/600/600?random=15",
-      "https://picsum.photos/600/600?random=16"
+      "https://m.media-amazon.com/images/I/817uOYDey6L.jpg",
+      "https://m.media-amazon.com/images/I/81Vl-ySWSjL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71wVH50p+vL._SX679_.jpg"
     ],
     "specs": [
       { "name": "Motor", "value": "N20 gear motor" },
@@ -57,8 +57,8 @@ export const products: Product[] = [
     "category": "Soldering Accessories",
     "images": [
       "https://otovon.in/cdn/shop/products/Hakko599B-02TipCleanerspongedome_800x.jpg?v=1670415307",
-      "https://picsum.photos/600/600?random=22",
-      "https://picsum.photos/600/600?random=23"
+      "https://otovon.in/cdn/shop/products/Hakko599B-02SolderTipCleaningSponge_800x.jpg?v=1670416413",
+      "https://otovon.in/cdn/shop/products/Hakko599B-02TipCleanerBottom_800x.jpg?v=1670416413"
     ],
     "specs": [
       { "name": "Material", "value": "Stainless steel scrubber" },
@@ -78,8 +78,8 @@ export const products: Product[] = [
     "price": 79.00,
     "category": "Soldering Accessories",
     "images": [
-      "https://picsum.photos/600/600?random=24",
-      "https://picsum.photos/600/600?random=25"
+      "https://otovon.in/cdn/shop/products/GootST-40BWTipCleaningSponges_800x.jpg?v=1670145743",
+      "https://otovon.in/cdn/shop/products/GootST-40BWTipCleaningSponge_800x.jpg?v=1670145743"
     ],
     "specs": [
       { "name": "Material", "value": "Stainless steel wool" },
@@ -98,9 +98,10 @@ export const products: Product[] = [
     "price": 349.00,
     "category": "Soldering Accessories",
     "images": [
-      "https://picsum.photos/600/600?random=26",
-      "https://picsum.photos/600/600?random=27",
-      "https://picsum.photos/600/600?random=28"
+      "https://m.media-amazon.com/images/I/614RSU5BRbL._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/51KrcdCxXwL._SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61H7Tn6PGUL._SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61ikAmmC5mL._SL1500_.jpg"
     ],
     "specs": [
       { "name": "Fan", "value": "High-efficiency low-noise motor" },

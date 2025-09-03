@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         hostname: 'otovon.in',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'm.media-amazon.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
