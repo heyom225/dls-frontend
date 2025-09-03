@@ -23,7 +23,7 @@ export const products: Product[] = [
       { "name": "Software", "value": "Auto-updates enabled" }
     ],
     "dataAiHint": "wireless custom macropad",
-    "stockStatus": "In Stock"
+    "stockCount": 25
   },
   {
     "id": "2",
@@ -46,7 +46,7 @@ export const products: Product[] = [
       { "name": "Direction", "value": "Clockwise & counterclockwise" }
     ],
     "dataAiHint": "electric screwdriver",
-    "stockStatus": "Out of Stock"
+    "stockCount": 0
   },
   {
     "id": "3",
@@ -68,7 +68,7 @@ export const products: Product[] = [
       { "name": "Use Case", "value": "Safe alternative to wet sponge, extends tip life" }
     ],
     "dataAiHint": "soldering iron tip cleaner",
-    "stockStatus": "In Stock"
+    "stockCount": 150
   },
   {
     "id": "4",
@@ -88,7 +88,7 @@ export const products: Product[] = [
       { "name": "Use Case", "value": "Keeps soldering iron tips clean and long-lasting" }
     ],
     "dataAiHint": "soldering iron tip cleaner refill",
-    "stockStatus": "In Stock"
+    "stockCount": 200
   },
   {
     "id": "5",
@@ -110,7 +110,7 @@ export const products: Product[] = [
       { "name": "Use Case", "value": "Removes soldering smoke and particulates" }
     ],
     "dataAiHint": "soldering fume extractor",
-    "stockStatus": "In Stock"
+    "stockCount": 42
   }
 ];
 

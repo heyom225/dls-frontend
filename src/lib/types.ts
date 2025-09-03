@@ -8,7 +8,7 @@ export type Product = {
   images: string[];
   specs: { name: string; value: string }[];
   dataAiHint: string;
-  stockStatus: 'In Stock' | 'Out of Stock';
+  stockCount: number;
 };
 
 export type Post = {

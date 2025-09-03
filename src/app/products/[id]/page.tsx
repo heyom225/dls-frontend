@@ -21,7 +21,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     notFound();
   }
 
-  const isOutOfStock = product.stockStatus === 'Out of Stock';
+  const isOutOfStock = product.stockCount === 0;
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -56,7 +56,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           <div className="flex items-center gap-4 mb-2">
             <Badge variant="secondary">{product.category}</Badge>
             <Badge variant={isOutOfStock ? 'destructive' : 'default'}>
-              {product.stockStatus}
+              {isOutOfStock ? 'Out of Stock' : 'In Stock'}
             </Badge>
           </div>
           <h1 className="text-4xl md:text-5xl font-headline font-bold mb-4">{product.name}</h1>
