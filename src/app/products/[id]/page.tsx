@@ -21,6 +21,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     notFound();
   }
 
+  const isOutOfStock = product.stockStatus === 'Out of Stock';
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
@@ -51,15 +53,24 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         </div>
 
         <div>
-          <Badge variant="secondary" className="mb-2">{product.category}</Badge>
+          <div className="flex items-center gap-4 mb-2">
+            <Badge variant="secondary">{product.category}</Badge>
+            <Badge variant={isOutOfStock ? 'destructive' : 'default'}>
+              {product.stockStatus}
+            </Badge>
+          </div>
           <h1 className="text-4xl md:text-5xl font-headline font-bold mb-4">{product.name}</h1>
           <p className="text-3xl font-semibold text-primary mb-6">₹{product.price.toFixed(2)}</p>
           
           <p className="text-lg text-foreground/80 mb-6">{product.longDescription}</p>
 
-          <Button size="lg" className="w-full md:w-auto text-lg">
+          <Button 
+            size="lg" 
+            className="w-full md:w-auto text-lg"
+            disabled={isOutOfStock}
+          >
             <ShoppingCart className="mr-2 h-5 w-5" />
-            Add to Cart
+            {isOutOfStock ? 'Out of Stock' : 'Add to Cart'}
           </Button>
 
           <div className="mt-10">

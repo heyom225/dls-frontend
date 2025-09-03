@@ -22,7 +22,8 @@ export const products: Product[] = [
       { "name": "Charging Port", "value": "USB-C" },
       { "name": "Software", "value": "Auto-updates enabled" }
     ],
-    "dataAiHint": "wireless custom macropad"
+    "dataAiHint": "wireless custom macropad",
+    "stockStatus": "In Stock"
   },
   {
     "id": "2",
@@ -44,7 +45,8 @@ export const products: Product[] = [
       { "name": "Shell", "value": "Durable hard plastic" },
       { "name": "Direction", "value": "Clockwise & counterclockwise" }
     ],
-    "dataAiHint": "electric screwdriver"
+    "dataAiHint": "electric screwdriver",
+    "stockStatus": "Out of Stock"
   },
   {
     "id": "3",
@@ -65,7 +67,8 @@ export const products: Product[] = [
       { "name": "Maintenance", "value": "Replaceable steel wool insert" },
       { "name": "Use Case", "value": "Safe alternative to wet sponge, extends tip life" }
     ],
-    "dataAiHint": "soldering iron tip cleaner"
+    "dataAiHint": "soldering iron tip cleaner",
+    "stockStatus": "In Stock"
   },
   {
     "id": "4",
@@ -84,7 +87,8 @@ export const products: Product[] = [
       { "name": "Maintenance", "value": "Easily replaceable insert" },
       { "name": "Use Case", "value": "Keeps soldering iron tips clean and long-lasting" }
     ],
-    "dataAiHint": "soldering iron tip cleaner refill"
+    "dataAiHint": "soldering iron tip cleaner refill",
+    "stockStatus": "In Stock"
   },
   {
     "id": "5",
@@ -105,7 +109,8 @@ export const products: Product[] = [
       { "name": "Design", "value": "Angled stand for direct fume capture" },
       { "name": "Use Case", "value": "Removes soldering smoke and particulates" }
     ],
-    "dataAiHint": "soldering fume extractor"
+    "dataAiHint": "soldering fume extractor",
+    "stockStatus": "In Stock"
   }
 ];
 
