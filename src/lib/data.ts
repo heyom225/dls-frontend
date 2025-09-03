@@ -2,101 +2,111 @@ import type { Product, Post, User } from './types';
 
 export const products: Product[] = [
   {
-    id: '1',
-    name: 'Chrono-Pad v2',
-    description: '12-key macropad with customizable RGB and hot-swappable switches.',
-    longDescription: 'The Chrono-Pad v2 is the ultimate productivity tool for digital creators. With 12 fully programmable keys, three rotary encoders, and per-key RGB lighting, you can create endless shortcuts and macros. Its hot-swappable design allows you to customize the feel with any MX-style switch. Encased in a sleek, CNC-milled aluminum body.',
-    price: 129.99,
-    category: 'Macropads',
-    images: ['https://picsum.photos/600/600?random=1', 'https://picsum.photos/600/600?random=2', 'https://picsum.photos/600/600?random=3'],
-    specs: [
-      { name: 'Keys', value: '12 + 3 encoders' },
-      { name: 'Switches', value: 'Hot-swappable (MX-style)' },
-      { name: 'Connectivity', value: 'USB-C' },
-      { name: 'Body', value: 'Anodized Aluminum' },
+    "id": "1",
+    "name": "DLS Macropad",
+    "description": "3x3 wireless macropad with Cherry MX Brown switches, dual connectivity, and fast charging.",
+    "longDescription": "The DLS Macropad is designed for creators, gamers, and professionals who demand efficiency and style. With a compact 3x3 layout, this wireless powerhouse combines both Bluetooth and Wi-Fi connectivity for seamless performance across devices. Outfitted with tactile Cherry MX Brown switches, every press feels crisp and responsive. The hard plastic chassis keeps it lightweight yet durable, while the USB-C quick-charge system delivers up to 3 hours of battery life in just 45 minutes of charging. Plus, enjoy peace of mind with automatic software updates that keep your macropad optimized at all times.",
+    "price": 1999.00,
+    "category": "Macropads",
+    "images": [
+      "https://picsum.photos/600/600?random=11",
+      "https://picsum.photos/600/600?random=12",
+      "https://picsum.photos/600/600?random=13"
     ],
-    dataAiHint: "custom keyboard"
+    "specs": [
+      { "name": "Keys", "value": "9-key (3x3 layout)" },
+      { "name": "Switches", "value": "Cherry MX Brown (tactile)" },
+      { "name": "Connectivity", "value": "Bluetooth + Wi-Fi" },
+      { "name": "Battery Life", "value": "3 hours (45 min quick charge)" },
+      { "name": "Chassis", "value": "Durable hard plastic" },
+      { "name": "Charging Port", "value": "USB-C" },
+      { "name": "Software", "value": "Auto-updates enabled" }
+    ],
+    "dataAiHint": "wireless custom macropad"
   },
   {
-    id: '2',
-    name: 'QuantumDrive Screwdriver',
-    description: 'A mini electric screwdriver with 48 precision bits and a magnetic case.',
-    longDescription: 'Tackle any electronics repair with the QuantumDrive. This pen-sized electric screwdriver features adjustable torque, a powerful motor, and an OLED display. The set includes 48 S2 steel bits to handle everything from smartphones to drones. The magnetic aluminum case keeps it all organized and charges the screwdriver.',
-    price: 89.99,
-    category: 'Mini Electric Screwdrivers',
-    images: ['https://picsum.photos/600/600?random=4', 'https://picsum.photos/600/600?random=5', 'https://picsum.photos/600/600?random=6'],
-    specs: [
-      { name: 'Torque', value: '0.25-0.35 N.m Electric' },
-      { name: 'Battery', value: '350mAh Li-Po' },
-      { name: 'Bits', value: '48 (S2 Steel)' },
-      { name: 'Charging', value: 'USB-C in case' },
+    "id": "2",
+    "name": "DLS PrecisionDriver",
+    "description": "Compact electric screwdriver with 2000mAh battery, dual-direction control, and durable hard shell.",
+    "longDescription": "The DLS PrecisionDriver is built for makers, repair enthusiasts, and professionals who need reliable torque in a pocket-sized tool. Powered by a high-efficiency N20 gear motor, it delivers steady performance for electronics, drones, and DIY projects. With a long-lasting 2000mAh battery managed by a TP4056 charging circuit, enjoy up to 8 hours of operation on a single charge. The USB-C fast-charge system fully recharges the 18650 cell in just 2.5 hours. Designed with a tough plastic hard shell for durability, the PrecisionDriver supports both clockwise and counterclockwise rotation for maximum flexibility. A must-have for precision repair kits.",
+    "price": 1299.00,
+    "category": "Mini Electric Screwdrivers",
+    "images": [
+      "https://picsum.photos/600/600?random=14",
+      "https://picsum.photos/600/600?random=15",
+      "https://picsum.photos/600/600?random=16"
     ],
-    dataAiHint: "electric screwdriver"
+    "specs": [
+      { "name": "Motor", "value": "N20 gear motor" },
+      { "name": "Torque", "value": "Optimized for precision repair (medium load)" },
+      { "name": "Battery", "value": "2000mAh 18650 Li-ion (≈8h runtime)" },
+      { "name": "Charging", "value": "TP4056 circuit, USB-C (≈2.5h full charge)" },
+      { "name": "Shell", "value": "Durable hard plastic" },
+      { "name": "Direction", "value": "Clockwise & counterclockwise" }
+    ],
+    "dataAiHint": "electric screwdriver"
   },
   {
-    id: '3',
-    name: 'AuraConnect Hub',
-    description: 'Centralize your smart home with this universal IoT gateway.',
-    longDescription: 'Unify your smart home ecosystem. The AuraConnect Hub is compatible with Zigbee, Z-Wave, Wi-Fi, and Matter devices, allowing you to control everything from a single app. Automate routines, monitor sensors, and enjoy a truly connected home. Features local processing for speed and privacy.',
-    price: 199.99,
-    category: 'Home Automation Devices',
-    images: ['https://picsum.photos/600/600?random=7', 'https://picsum.photos/600/600?random=8', 'https://picsum.photos/600/600?random=9'],
-    specs: [
-      { name: 'Compatibility', value: 'Zigbee 3.0, Z-Wave, Wi-Fi, Matter' },
-      { name: 'Processor', value: 'Quad-core ARM A55' },
-      { name: 'Power', value: 'USB-C (5V/2A)' },
-      { name: 'Range', value: 'Up to 100 meters' },
+    "id": "3",
+    "name": "DLS TipClean Pro",
+    "description": "Stainless steel soldering tip cleaner with replaceable scrubber and durable enclosure.",
+    "longDescription": "Keep your soldering iron performing like new with the DLS TipClean Pro. Designed with a high-quality stainless steel scrubber, it removes oxidation and excess solder without damaging your tips. The hardened plastic enclosure provides stability and heat resistance, while its clever bottom-cap design allows you to easily remove and replace the steel wool when needed. Cleaner, safer, and longer-lasting than traditional wet sponges, the TipClean Pro is the perfect bench companion for makers, engineers, and repair pros.",
+    "price": 229.00,
+    "category": "Soldering Accessories",
+    "images": [
+      "https://picsum.photos/600/600?random=21",
+      "https://picsum.photos/600/600?random=22",
+      "https://picsum.photos/600/600?random=23"
     ],
-    dataAiHint: "smart home hub"
+    "specs": [
+      { "name": "Material", "value": "Stainless steel scrubber" },
+      { "name": "Enclosure", "value": "Hardened plastic body" },
+      { "name": "Design", "value": "Removable bottom cap for easy replacement" },
+      { "name": "Maintenance", "value": "Replaceable steel wool insert" },
+      { "name": "Use Case", "value": "Safe alternative to wet sponge, extends tip life" }
+    ],
+    "dataAiHint": "soldering iron tip cleaner"
   },
   {
-    id: '4',
-    name: 'EnviroSense Monitor',
-    description: 'Track air quality, temperature, and humidity in real-time.',
-    longDescription: 'Breathe easier with the EnviroSense Monitor. This compact IoT device provides real-time data on your indoor environment, including PM2.5, VOCs, CO2, temperature, and humidity. View historical data and receive alerts on your smartphone. Its minimalist e-ink display blends into any room.',
-    price: 79.99,
-    category: 'IoT Gadgets',
-    images: ['https://picsum.photos/600/600?random=10', 'https://picsum.photos/600/600?random=11', 'https://picsum.photos/600/600?random=12'],
-    specs: [
-      { name: 'Sensors', value: 'PM2.5, VOC, CO2, Temp, Humidity' },
-      { name: 'Display', value: '2.9" E-Ink' },
-      { name: 'Connectivity', value: 'Wi-Fi 2.4GHz' },
-      { name: 'Power', value: 'USB-C' },
+    "id": "4",
+    "name": "DLS TipClean Refill",
+    "description": "Replacement stainless steel wool insert for the DLS TipClean Pro soldering tip cleaner.",
+    "longDescription": "Extend the life of your DLS TipClean Pro with the DLS TipClean Refill. Crafted from premium stainless steel, this replacement scrubber is designed to maintain optimal soldering iron tip performance by removing oxidation and excess solder without water or harsh wear. Swapping it out is simple—just remove the bottom cap of your TipClean Pro, replace the insert, and you’re ready to solder again. A must-have consumable for every electronics workbench.",
+    "price": 79.00,
+    "category": "Soldering Accessories",
+    "images": [
+      "https://picsum.photos/600/600?random=24",
+      "https://picsum.photos/600/600?random=25"
     ],
-    dataAiHint: "air quality monitor"
-  },
-   {
-    id: '5',
-    name: 'LogicRuler',
-    description: 'A smart ruler that measures, divides, and logs dimensions digitally.',
-    longDescription: 'Reinventing measurement for the digital age. The LogicRuler not only gives you precise digital readouts but can also calculate midpoints, divide segments, and save measurements to your phone via Bluetooth. A must-have for designers, architects, and hobbyists who value precision.',
-    price: 65.50,
-    category: 'Smart Tools',
-    images: ['https://picsum.photos/600/600?random=13', 'https://picsum.photos/600/600?random=14'],
-    specs: [
-      { name: 'Accuracy', value: '±0.1mm' },
-      { name: 'Length', value: '30cm / 12 inches' },
-      { name: 'Connectivity', value: 'Bluetooth 5.0' },
-      { name: 'Battery Life', value: '8 hours continuous use' },
+    "specs": [
+      { "name": "Material", "value": "Stainless steel wool" },
+      { "name": "Compatibility", "value": "Fits DLS TipClean Pro" },
+      { "name": "Maintenance", "value": "Easily replaceable insert" },
+      { "name": "Use Case", "value": "Keeps soldering iron tips clean and long-lasting" }
     ],
-    dataAiHint: "digital ruler"
+    "dataAiHint": "soldering iron tip cleaner refill"
   },
   {
-    id: '6',
-    name: 'Portal Light Panels',
-    description: 'Modular, touch-sensitive wall light panels for immersive ambient lighting.',
-    longDescription: 'Paint your walls with light. The Portal Light Panels are modular hexagonal tiles that you can arrange in any pattern. Control them with your voice, the app, or by touch. With over 16 million colors and dynamic lighting scenes, you can create the perfect ambiance for gaming, movies, or relaxation.',
-    price: 249.99,
-    category: 'Home Automation Devices',
-    images: ['https://picsum.photos/600/600?random=15', 'https://picsum.photos/600/600?random=16', 'https://picsum.photos/600/600?random=17'],
-    specs: [
-      { name: 'Colors', value: '16M+ (RGBW)' },
-      { name: 'Control', value: 'App, Voice, Touch' },
-      { name: 'Compatibility', value: 'Alexa, Google Assistant, HomeKit' },
-      { name: 'Kit Size', value: '9 Panels (expandable)' },
+    "id": "5",
+    "name": "DLS FumeGuard",
+    "description": "Compact soldering fume extractor with powerful suction and replaceable filter.",
+    "longDescription": "Protect your health while soldering with the DLS FumeGuard. This compact air sucker is designed to capture and filter soldering fumes at the source, keeping your workspace clean and safe. Equipped with a high-efficiency fan and replaceable activated carbon filter, it absorbs harmful smoke and particulates without being noisy or intrusive. The durable plastic housing and angled stand make it perfect for hobbyists, makers, and professional electronics repair benches. Stay focused on your craft knowing the air around you is cleaner.",
+    "price": 349.00,
+    "category": "Soldering Accessories",
+    "images": [
+      "https://picsum.photos/600/600?random=26",
+      "https://picsum.photos/600/600?random=27",
+      "https://picsum.photos/600/600?random=28"
     ],
-    dataAiHint: "smart light panels"
-  },
+    "specs": [
+      { "name": "Fan", "value": "High-efficiency low-noise motor" },
+      { "name": "Filter", "value": "Replaceable activated carbon pad" },
+      { "name": "Housing", "value": "Durable heat-resistant plastic" },
+      { "name": "Design", "value": "Angled stand for direct fume capture" },
+      { "name": "Use Case", "value": "Removes soldering smoke and particulates" }
+    ],
+    "dataAiHint": "soldering fume extractor"
+  }
 ];
 
 export const posts: Post[] = [
