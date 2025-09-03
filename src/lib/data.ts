@@ -56,7 +56,7 @@ export const products: Product[] = [
     "price": 229.00,
     "category": "Soldering Accessories",
     "images": [
-      "https://picsum.photos/600/600?random=21",
+      "https://otovon.in/cdn/shop/products/Hakko599B-02TipCleanerspongedome_800x.jpg?v=1670415307",
       "https://picsum.photos/600/600?random=22",
       "https://picsum.photos/600/600?random=23"
     ],
@@ -110,7 +110,7 @@ export const products: Product[] = [
       { "name": "Use Case", "value": "Removes soldering smoke and particulates" }
     ],
     "dataAiHint": "soldering fume extractor",
-    "stockCount": 42
+    "stockCount": 0
   }
 ];
 
